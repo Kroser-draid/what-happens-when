@@ -96,6 +96,48 @@ connection, but historically has been over PS/2 or ADB connections.
   event.
 
 
+Keyboard Firmware Processing
+----------------------------
+This section would explain the internal processes that occur within the keyboard 
+itself,from the moment a key is pressed to when the signal is sent to the computer. 
+Key points to cover:
+
+*Microcontroller operations:*
+
+- How the keyboard's microcontroller detects a key press
+
+- The scanning process for identifying which key was pressed
+
+
+*Debouncing:*
+
+- Detailed explanation of the debouncing algorithm
+
+- Why debouncing is necessary and how it prevents erroneous multiple key presses
+
+
+*Key matrix handling:*
+
+- How the keyboard firmware interprets simultaneous key presses
+
+- Explanation of n-key rollover and anti-ghosting technologies
+
+
+*Firmware-level key mapping:*
+
+- How the firmware translates a physical key press into a scancode
+
+- Handling of special keys (Fn keys, media keys, etc.)
+
+
+*USB HID protocol preparation:*
+
+- How the keyboard prepares the data for transmission over USB
+
+- Packaging of scancodes into USB HID reports
+
+
+
 Interrupt fires [NOT for USB keyboards]
 ---------------------------------------
 
